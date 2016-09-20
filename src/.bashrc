@@ -10,6 +10,8 @@ alias cp="cp -i"
 alias rm="trash"
 alias ptpb="pbpst"
 alias scrot="scrot -e 'mv $f ~/screenshots'"
+alias ddnet="teeworlds-ddnet"
+alias sleep="systemctl suspend"
 
 alias csvcat="column -s, -t"
 
@@ -23,7 +25,6 @@ alias push="git push"
 export EDITOR="emacs"
 export VISUAL="emacs"
 export CC="gcc"
-export SRCDEST="$HOME/.suckless"
 
 # Functions
 
