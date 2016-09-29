@@ -12,6 +12,8 @@ alias ptpb="pbpst"
 alias scrot="scrot -e 'mv $f ~/screenshots'"
 alias ddnet="teeworlds-ddnet"
 alias sleep="systemctl suspend"
+alias visudo="sudo EDITOR=emacs visudo"
+alias df="df -h"
 
 alias csvcat="column -s, -t"
 
