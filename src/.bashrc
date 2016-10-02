@@ -68,3 +68,7 @@ ix() {
     }
     curl $opts -F f:1='<-' $* ix.io/$id
 }
+
+# Clear history
+history -c
+/usr/bin/env rm ~/.bash_history
