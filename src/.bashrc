@@ -9,7 +9,7 @@ alias mv="mv -i"
 alias cp="cp -i"
 alias rm="trash"
 alias ptpb="pbpst"
-alias scrot="scrot -e 'mv $f ~/screenshots'"
+alias scrot="scrot -e 'mv \$f ~/screenshots'"
 alias ddnet="teeworlds-ddnet"
 alias sleep="systemctl suspend"
 alias visudo="sudo EDITOR=emacs visudo"
@@ -40,11 +40,8 @@ trash() {
 }
 
 emptytrash() {
-    local path="$HOME/.Trash"
-    for file in $path; do
-	echo "Removing: $file"
-	/usr/bin/env rm $file
-    done
+    local path="$HOME/.Trash/"
+    /usr/bin/env rm -rf $path
 }
 
 ix() {
