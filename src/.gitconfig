@@ -1,3 +1,6 @@
 [user]
 	email = thepiercingarrow@gmail.com
 	name = Maxwell Zhao
+	signingkey = 057C9F78
+[commit]
+	gpgsign = true

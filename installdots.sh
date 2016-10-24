@@ -7,3 +7,6 @@ sudo cp src/etc/pacman.conf /etc/pacman.conf
 
 mkdir -p ~/.config/
 cp -r src/.config/dunst src/.config/git ~/.config/
+
+mkdir -p ~/scripts/
+cp -r src/scripts/ ~/

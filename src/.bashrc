@@ -4,6 +4,7 @@
 alias ls="ls --color"
 alias la="ls -a"
 alias e="emacs"
+alias s="sandy"
 alias p="pacaur"
 alias mv="mv -i"
 alias cp="cp -i"
@@ -11,9 +12,10 @@ alias rm="trash"
 alias ptpb="pbpst"
 alias scrot="scrot -e 'mv \$f ~/screenshots'"
 alias ddnet="teeworlds-ddnet"
-alias sleep="systemctl suspend"
+alias suspend="systemctl suspend"
 alias visudo="sudo EDITOR=emacs visudo"
 alias df="df -h"
+alias free="free -h"
 
 alias csvcat="column -s, -t"
 
@@ -35,7 +37,7 @@ trash() {
     mkdir -p $path
     for file in $@; do
 	echo "Trashing: $file"
-	mv $file $path/
+	mv -f $file $path/
     done
 }
 
@@ -71,4 +73,4 @@ ix() {
 
 # Clear history
 history -c
-/usr/bin/env rm ~/.bash_history
+/usr/bin/env rm -f ~/.bash_history

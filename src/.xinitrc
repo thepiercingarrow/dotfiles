@@ -49,4 +49,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 systemctl --user start redshift # Redshift
-exec dwm
+$HOME/scripts/dwmstatus &
+$HOME/scripts/startdwm
