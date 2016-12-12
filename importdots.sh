@@ -4,6 +4,7 @@ mkdir -p src/
 
 cp ~/.bashrc ~/.bash_profile ~/.inputrc src/
 cp ~/.xinitrc ~/.gitconfig ~/.emacs src/
+cp ~/.Xmodmap src/
 
 mkdir -p src/etc/
 cp /etc/pacman.conf src/etc

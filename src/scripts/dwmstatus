@@ -1,9 +1,6 @@
 #!/bin/bash
 
 while true; do
-    VOLUME=$(amixer get Master | tail -n1 | awk '{ print $5 }' | tr -d [])
-    BATTERY=$(cat /sys/class/power_supply/BAT0/capacity)%
-    DATE=$(date +%H:%M)
-    xsetroot -name "Vol: $VOLUME | Bat: $BATTERY | $DATE"
-    sleep 20
+    $HOME/scripts/setdwmstatus
+    sleep 5
 done
